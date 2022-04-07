@@ -8,7 +8,7 @@
 先檢查，如果是「(」就push進去stack。
 <br>
 <br>
-假如是「)」且stack的top等於「(」就進行pop，否則就把「)」push進stack   __註1
+否則，是「)」且stack的top等於「(」就進行pop，不是的話就把「)」push進stack   __註1
 <br>
 <br>
 註1、上面那句寫成程式碼就是
