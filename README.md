@@ -29,6 +29,7 @@ int main(){
 	ios::sync_with_stdio(0);cin.tie(0);
 	string str; 
 	cin >> str;
+	int end=0;
 	stack<char> st;
 	for(auto i:str){
 		if(i == '(' ){
@@ -37,15 +38,17 @@ int main(){
 		else{
 			if(!st.empty() && st.top() == '(' )
 				st.pop();
-			else
-				st.push(i);
+			else{
+				end = 1;
+				cout<< "false" << '\n';
+				break;
+			}
 		}
 	}
-	if(st.empty())
+	if(st.empty() && !end)
 		cout<< "ture" << '\n';
-	else 
+	else if(!st.empty() && !end)
 		cout<< "false" << '\n';
-	
 	return 0;
 }
 ```
