@@ -14,7 +14,7 @@
 經過遍歷(就是從頭檢查一遍到尾巴)後如果stack是empty，答案就要輸出ture，反之輸出false。
 
 ------------
-
+## 解法:
 ```cpp
 
 #include<iostream>
