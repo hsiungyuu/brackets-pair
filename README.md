@@ -9,8 +9,8 @@
 <br>
 <br>
 否則，是「)」且stack的top等於「(」就進行pop，不是的話就直接輸出match fail
-<br>
-但我加上了一個變數end，是為了防止`()))`這case，因為在break後，你會發現第三個右括號已經不會被處理了，所以st.empty()是成立的，會輸出false跟ture。
+<br><br>
+但為何我要加上了一個變數end？是為了防止`()))`這case，因為在break後，你會發現第三個右括號不會被處理，所以`st.empty()`是成立的，會同時輸出false跟ture，而加上end的判斷後就能正確輸出。
 <br>
 <br>
 經過遍歷(就是從頭檢查一遍到尾巴)後如果stack是empty，答案就要輸出ture，反之輸出false。
