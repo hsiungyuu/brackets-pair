@@ -36,7 +36,7 @@ int main(){
 			if(!st.empty() && st.top() == '(' )
 				st.pop();
 			else
-				cout<< "false" << '\n';
+				st.push(i);
 		}
 	}
 	if(st.empty())
