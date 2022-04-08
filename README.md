@@ -11,11 +11,6 @@
 否則，是「)」且stack的top等於「(」就進行pop，不是的話就直接輸出match fail
 <br>
 <br>
-註1、上面那句寫成程式碼就是
-```cpp 
-if(!st.empty() && st.top() == '(' ) 
-```
-<br>
 經過遍歷(就是從頭檢查一遍到尾巴)後如果stack是empty，答案就要輸出ture，反之輸出false。
 
 ------------
